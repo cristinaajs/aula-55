@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Car from './components/Car'
+import PersonRegister from './components/PersonRegister'
+import GameScore from './components/GameScore';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloWorld name="Cristina" />
+      <Car owner="Penelope Charmosa"/>
+      <PersonRegister name="Cristina" age={27} lastName="Jesus" job="Data Scientist" />
+      <GameScore points={0}/>
     </div>
   );
 }
